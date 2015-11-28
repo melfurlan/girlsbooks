@@ -1,3 +1,6 @@
+<%= link_to "Cadastrar Livro", new_book_path %>
+<hr>
+
 <% @books.each do |book| %>	
 	Título:
 	<%= link_to book.title, book_path(book) %>
@@ -9,6 +12,8 @@
 	<%= book.publisher %>
 	<br>
 	Ano:
-	<%= book.year %>
+	<%= book.year %><p>
+	<%= link_to "Editar", edit_book_path(book) %>
+	</p>
 	<hr>
 <% end %>
