@@ -1,6 +1,6 @@
 <% @books.each do |book| %>	
 	Título:
-	<%= book.title %>
+	<%= link_to book.title, book_path(book) %>
 	<br>
 	Autor:
 	<%= book.author %>
