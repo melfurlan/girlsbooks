@@ -13,19 +13,19 @@
 
 ActiveRecord::Schema.define(version: 20151128134950) do
 
-  create_table "users", force: true do |t|
-    t.string   "name"
-    t.datetime "birth"
-    t.string   "email"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-   end
-
   create_table "books", force: true do |t|
     t.string   "title",      null: false
     t.string   "author",     null: false
     t.string   "publisher"
     t.integer  "year"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "users", force: true do |t|
+    t.string   "name"
+    t.datetime "birth"
+    t.string   "email"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
