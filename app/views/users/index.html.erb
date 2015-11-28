@@ -1,0 +1,13 @@
+<% @users.each do |user| %>
+	Usuarios:
+	<br>
+	Nome:
+	<%= user.name %>
+	<br>
+	Data de nascimento:
+	<%= user.birth %>
+	<br>
+	Email:
+	<%= user.email %>
+	<hr>
+<% end %>
